@@ -5,7 +5,7 @@
 using namespace std;
 int main()
 {
-    int so, sochan = 0, sole = 0, giaithua = 1, so1 = 0, so2 = 1, tong = { so1 + so2 };
+    int so, sochan = 0, sole = 0, giaithua = 1, so1 = 0, so2 = 1, tong = { so1 + so2 },songuyento =0 ;
     cout << "tong hop\n";
     cout << "nhap so "; cin >> so;
     for (int i = 1; i < so; i++)
@@ -38,13 +38,16 @@ int main()
         tong = so1 + so2;
     }
     cout << " so nguyen to la : "; 
-    for (int  y = 1; y < so ; y ++)
+    for (int y = 1; y < so; y++)
     {
         if (so % y == 0)
         {
-            cout  << y  << " ";
+            songuyento++;
         }
-
+    }
+    if (songuyento == 2  )
+    {
+        cout << songuyento << " "; 
     }
    
 }
